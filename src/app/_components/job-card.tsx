@@ -2,19 +2,7 @@ import Image from "next/image";
 import { CalendarDays, MapPin, DollarSign } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-
-interface Job {
-  id: number;
-  title: string;
-  company: string;
-  location: string;
-  type: string;
-  salary: string;
-  posted: string;
-  logo: string;
-  skills: string[];
-  remote: boolean;
-}
+import { Job } from "@/types/job";
 
 interface JobCardProps {
   job: Job;
